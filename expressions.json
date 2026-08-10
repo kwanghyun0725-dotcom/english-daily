@@ -1,0 +1,332 @@
+[
+  {
+    "phrase": "under the weather",
+    "ipa": "/ˌʌndər ðə ˈweðər/",
+    "ko": "몸이 좀 안 좋다",
+    "note": "감기 기운이 있거나 컨디션이 살짝 나쁠 때 쓰는 표현. 심각한 병이 아니라 “오늘 좀 찌뿌둥해” 정도의 뉘앙스예요.",
+    "examples": [
+      { "en": "I'm feeling a bit **under the weather** today.", "ko": "오늘 컨디션이 좀 안 좋아요." },
+      { "en": "She called in sick — she's **under the weather**.", "ko": "그녀는 몸이 안 좋아서 병가를 냈어요." }
+    ],
+    "tags": ["일상", "건강"]
+  },
+  {
+    "phrase": "call it a day",
+    "ipa": "/kɔːl ɪt ə deɪ/",
+    "ko": "오늘은 여기까지 하자",
+    "note": "일이나 공부를 그만 끝내자고 할 때. 꼭 하루의 끝이 아니어도, 하던 걸 마무리하자는 의미로 두루 써요.",
+    "examples": [
+      { "en": "It's almost midnight. Let's **call it a day**.", "ko": "거의 자정이네요. 오늘은 여기까지 하죠." },
+      { "en": "We finished the report, so we **called it a day**.", "ko": "보고서를 끝내고 일을 마쳤어요." }
+    ],
+    "tags": ["직장", "일상"]
+  },
+  {
+    "phrase": "a piece of cake",
+    "ipa": "/ə piːs əv keɪk/",
+    "ko": "식은 죽 먹기",
+    "note": "너무 쉬워서 힘들 것도 없다는 뜻. 이미 해낸 일에 대해 “별거 아니었어”라고 말할 때 특히 자연스러워요.",
+    "examples": [
+      { "en": "The test was **a piece of cake**.", "ko": "시험은 완전 쉬웠어요." },
+      { "en": "Don't worry, fixing this is **a piece of cake** for him.", "ko": "걱정 마요, 그 사람한테 이건 일도 아니에요." }
+    ],
+    "tags": ["일상", "학교"]
+  },
+  {
+    "phrase": "hit the sack",
+    "ipa": "/hɪt ðə sæk/",
+    "ko": "자러 가다",
+    "note": "'go to bed'의 캐주얼한 버전. 친구나 가족끼리 쓰는 편한 말이고, 격식 있는 자리에서는 잘 안 써요.",
+    "examples": [
+      { "en": "I'm exhausted. I'm going to **hit the sack**.", "ko": "너무 피곤해요. 이제 자러 갈게요." },
+      { "en": "We should **hit the sack** early — the flight is at six.", "ko": "일찍 자야 해요. 비행기가 6시예요." }
+    ],
+    "tags": ["일상"]
+  },
+  {
+    "phrase": "get the hang of it",
+    "ipa": "/ɡet ðə hæŋ əv ɪt/",
+    "ko": "요령을 익히다",
+    "note": "처음엔 어색하다가 하다 보니 감이 잡혔다는 뉘앙스. 새 일이나 새 앱을 배울 때 딱 맞는 표현이에요.",
+    "examples": [
+      { "en": "It's tricky at first, but you'll **get the hang of it**.", "ko": "처음엔 좀 까다롭지만 곧 감이 잡힐 거예요." },
+      { "en": "I finally **got the hang of** driving stick.", "ko": "드디어 수동 운전에 요령이 생겼어요." }
+    ],
+    "tags": ["학습", "직장"]
+  },
+  {
+    "phrase": "on the same page",
+    "ipa": "/ɒn ðə seɪm peɪdʒ/",
+    "ko": "생각이 같다, 말이 통하다",
+    "note": "서로 이해한 내용이 일치한다는 뜻. 회의 끝에 확인 차 쓰기 좋은, 회사에서 정말 자주 들리는 표현이에요.",
+    "examples": [
+      { "en": "Let's make sure we're **on the same page** before we start.", "ko": "시작하기 전에 생각이 같은지 확인해요." },
+      { "en": "I don't think we're **on the same page** about the deadline.", "ko": "마감일에 대해 서로 다르게 이해한 것 같아요." }
+    ],
+    "tags": ["직장", "회의"]
+  },
+  {
+    "phrase": "break the ice",
+    "ipa": "/breɪk ðə aɪs/",
+    "ko": "어색한 분위기를 풀다",
+    "note": "처음 만난 사람들 사이의 서먹함을 깨는 것. 농담이나 가벼운 질문이 그 역할을 하죠.",
+    "examples": [
+      { "en": "He told a joke to **break the ice**.", "ko": "그는 분위기를 풀려고 농담을 했어요." },
+      { "en": "That question really **broke the ice** at the meeting.", "ko": "그 질문 덕에 회의 분위기가 확 풀렸어요." }
+    ],
+    "tags": ["소통", "직장"]
+  },
+  {
+    "phrase": "not my cup of tea",
+    "ipa": "/nɒt maɪ kʌp əv tiː/",
+    "ko": "내 취향은 아니야",
+    "note": "싫다고 직접 말하지 않고 부드럽게 거절하는 표현. 상대 기분을 덜 상하게 하는 아주 영국적인 완곡어법이에요.",
+    "examples": [
+      { "en": "Horror movies are **not my cup of tea**.", "ko": "공포 영화는 제 취향이 아니에요." },
+      { "en": "It's a good book, just **not my cup of tea**.", "ko": "좋은 책이긴 한데, 그냥 제 스타일은 아니에요." }
+    ],
+    "tags": ["취향", "일상"]
+  },
+  {
+    "phrase": "long story short",
+    "ipa": "/lɔːŋ ˈstɔːri ʃɔːrt/",
+    "ko": "간단히 말하면, 결론만 말하자면",
+    "note": "긴 사연을 줄여서 핵심만 말할 때 앞에 붙이는 말. 문장 맨 앞에 툭 던지듯 쓰면 자연스러워요.",
+    "examples": [
+      { "en": "**Long story short**, we missed the train.", "ko": "결론만 말하면, 우리 기차를 놓쳤어요." },
+      { "en": "**Long story short**, I got the job!", "ko": "간단히 말하면, 저 그 일자리 붙었어요!" }
+    ],
+    "tags": ["대화", "일상"]
+  },
+  {
+    "phrase": "beat around the bush",
+    "ipa": "/biːt əˈraʊnd ðə bʊʃ/",
+    "ko": "빙빙 돌려 말하다",
+    "note": "본론을 피하고 변죽만 울리는 것. 보통 “그만 돌려 말하고 본론 말해”처럼 재촉할 때 써요.",
+    "examples": [
+      { "en": "Stop **beating around the bush** and tell me what happened.", "ko": "그만 돌려 말하고 무슨 일인지 말해줘요." },
+      { "en": "He **beat around the bush** for ten minutes.", "ko": "그는 10분 동안 빙빙 돌려서만 말했어요." }
+    ],
+    "tags": ["대화", "소통"]
+  },
+  {
+    "phrase": "bite the bullet",
+    "ipa": "/baɪt ðə ˈbʊlɪt/",
+    "ko": "이 악물고 하다, 큰맘 먹고 하다",
+    "note": "피할 수 없는 힘든 일을 각오하고 해치우는 것. 큰 지출을 결심할 때도 자주 써요.",
+    "examples": [
+      { "en": "I finally **bit the bullet** and went to the dentist.", "ko": "결국 마음먹고 치과에 갔어요." },
+      { "en": "We had to **bite the bullet** and buy a new laptop.", "ko": "어쩔 수 없이 큰맘 먹고 새 노트북을 샀어요." }
+    ],
+    "tags": ["결심", "일상"]
+  },
+  {
+    "phrase": "cost an arm and a leg",
+    "ipa": "/kɔːst ən ɑːrm ənd ə leɡ/",
+    "ko": "엄청 비싸다",
+    "note": "가격이 말도 안 되게 비싸다는 과장 표현. 'expensive'보다 훨씬 생생하게 들려요.",
+    "examples": [
+      { "en": "That bag **cost an arm and a leg**.", "ko": "그 가방 진짜 엄청 비쌌어요." },
+      { "en": "Concert tickets **cost an arm and a leg** these days.", "ko": "요즘 콘서트 티켓은 값이 어마어마해요." }
+    ],
+    "tags": ["쇼핑", "돈"]
+  },
+  {
+    "phrase": "take a rain check",
+    "ipa": "/teɪk ə reɪn tʃek/",
+    "ko": "다음 기회로 미루다",
+    "note": "초대를 거절하되 “다음에 꼭”이라는 여지를 남기는 표현. 정중하게 빠질 때 아주 유용해요.",
+    "examples": [
+      { "en": "Can I **take a rain check** on dinner?", "ko": "저녁은 다음 기회로 미뤄도 될까요?" },
+      { "en": "I'll **take a rain check** — I'm swamped today.", "ko": "오늘은 너무 바빠서 다음에 할게요." }
+    ],
+    "tags": ["약속", "소통"]
+  },
+  {
+    "phrase": "pull an all-nighter",
+    "ipa": "/pʊl ən ˌɔːlˈnaɪtər/",
+    "ko": "밤을 새우다",
+    "note": "시험이나 마감 때문에 잠 안 자고 밤을 새는 것. 학생과 직장인 모두가 쓰는 말이에요.",
+    "examples": [
+      { "en": "I **pulled an all-nighter** to finish the essay.", "ko": "에세이 끝내려고 밤을 샜어요." },
+      { "en": "Don't **pull an all-nighter** before the interview.", "ko": "면접 전날엔 밤새우지 마세요." }
+    ],
+    "tags": ["학교", "직장"]
+  },
+  {
+    "phrase": "play it by ear",
+    "ipa": "/pleɪ ɪt baɪ ɪr/",
+    "ko": "상황 봐서 하다",
+    "note": "미리 정하지 않고 그때그때 맞춰 가겠다는 뜻. 원래는 악보 없이 귀로 듣고 연주한다는 말에서 왔어요.",
+    "examples": [
+      { "en": "Let's just **play it by ear** and see how we feel.", "ko": "그냥 상황 봐서 정하죠." },
+      { "en": "We don't have a plan — we're **playing it by ear**.", "ko": "딱히 계획은 없고 그때그때 맞춰 가고 있어요." }
+    ],
+    "tags": ["계획", "일상"]
+  },
+  {
+    "phrase": "speak of the devil",
+    "ipa": "/spiːk əv ðə ˈdevl/",
+    "ko": "호랑이도 제 말 하면 온다",
+    "note": "누군가 얘기하던 중에 그 사람이 나타났을 때. 한국 속담과 의미가 거의 똑같아서 외우기 쉬워요.",
+    "examples": [
+      { "en": "**Speak of the devil** — here he comes!", "ko": "호랑이도 제 말 하면 온다더니, 저기 오네요!" },
+      { "en": "We were just talking about you. **Speak of the devil**.", "ko": "방금 네 얘기 하고 있었는데. 딱 나타났네." }
+    ],
+    "tags": ["대화", "일상"]
+  },
+  {
+    "phrase": "cut corners",
+    "ipa": "/kʌt ˈkɔːrnərz/",
+    "ko": "대충 하다, 절차를 건너뛰다",
+    "note": "시간이나 돈을 아끼려고 해야 할 걸 빼먹는 것. 거의 항상 부정적인 뉘앙스예요.",
+    "examples": [
+      { "en": "Don't **cut corners** on safety.", "ko": "안전 문제에서는 대충 넘어가지 마세요." },
+      { "en": "They **cut corners** to meet the deadline.", "ko": "마감을 맞추려고 할 일을 건너뛰었어요." }
+    ],
+    "tags": ["직장", "태도"]
+  },
+  {
+    "phrase": "hit it off",
+    "ipa": "/hɪt ɪt ɔːf/",
+    "ko": "처음부터 죽이 잘 맞다",
+    "note": "만나자마자 친해졌다는 뜻. 친구든 소개팅이든 첫인상이 좋았을 때 두루 써요.",
+    "examples": [
+      { "en": "We **hit it off** right away.", "ko": "우리는 만나자마자 잘 통했어요." },
+      { "en": "They really **hit it off** at the party.", "ko": "둘이 파티에서 정말 죽이 잘 맞더라고요." }
+    ],
+    "tags": ["관계", "일상"]
+  },
+  {
+    "phrase": "out of the blue",
+    "ipa": "/aʊt əv ðə bluː/",
+    "ko": "난데없이, 갑자기",
+    "note": "아무 예고 없이 벌어진 일에 써요. 맑은 하늘에서 갑자기 번개가 친다는 이미지에서 온 표현이에요.",
+    "examples": [
+      { "en": "She called me **out of the blue** after five years.", "ko": "5년 만에 그녀가 난데없이 전화를 했어요." },
+      { "en": "The offer came **out of the blue**.", "ko": "그 제안은 정말 갑작스럽게 왔어요." }
+    ],
+    "tags": ["일상", "이야기"]
+  },
+  {
+    "phrase": "wrap up",
+    "ipa": "/ræp ʌp/",
+    "ko": "마무리하다",
+    "note": "회의나 프로젝트를 끝맺을 때. 'Let's wrap up'은 회의실에서 매일같이 들리는 말이에요.",
+    "examples": [
+      { "en": "Let's **wrap up** the meeting in five minutes.", "ko": "5분 안에 회의를 마무리하죠." },
+      { "en": "I'm **wrapping up** the last section now.", "ko": "지금 마지막 부분을 마무리하는 중이에요." }
+    ],
+    "tags": ["직장", "회의"]
+  },
+  {
+    "phrase": "keep me posted",
+    "ipa": "/kiːp miː ˈpoʊstɪd/",
+    "ko": "계속 알려줘",
+    "note": "진행 상황을 계속 업데이트해 달라는 부탁. 이메일 마지막 줄에 쓰기 딱 좋아요.",
+    "examples": [
+      { "en": "**Keep me posted** on the results.", "ko": "결과 나오면 계속 알려주세요." },
+      { "en": "I'll **keep you posted** as soon as I hear back.", "ko": "답변 받는 대로 계속 알려드릴게요." }
+    ],
+    "tags": ["직장", "이메일"]
+  },
+  {
+    "phrase": "my bad",
+    "ipa": "/maɪ bæd/",
+    "ko": "내 잘못이야, 미안",
+    "note": "가벼운 실수에 대한 캐주얼한 사과. 친구 사이에는 자연스럽지만 상사에게는 'I'm sorry'가 안전해요.",
+    "examples": [
+      { "en": "Oh, **my bad** — I sent the wrong file.", "ko": "아, 내 실수예요. 파일을 잘못 보냈네요." },
+      { "en": "**My bad**! I thought the meeting was at three.", "ko": "미안해요! 회의가 3시인 줄 알았어요." }
+    ],
+    "tags": ["사과", "일상"]
+  },
+  {
+    "phrase": "give someone a heads-up",
+    "ipa": "/ɡɪv ˈsʌmwʌn ə ˈhedz ʌp/",
+    "ko": "미리 귀띔해 주다",
+    "note": "일이 벌어지기 전에 미리 알려주는 것. 배려의 뉘앙스가 있어서 직장에서 아주 자주 써요.",
+    "examples": [
+      { "en": "Just **a heads-up** — the office closes early today.", "ko": "미리 알려드리면, 오늘 사무실이 일찍 닫아요." },
+      { "en": "Thanks for **giving me a heads-up**.", "ko": "미리 알려줘서 고마워요." }
+    ],
+    "tags": ["직장", "소통"]
+  },
+  {
+    "phrase": "touch base",
+    "ipa": "/tʌtʃ beɪs/",
+    "ko": "간단히 연락하다, 상황 공유하다",
+    "note": "짧게 확인차 연락한다는 비즈니스 표현. 야구에서 베이스를 밟는다는 이미지에서 왔어요.",
+    "examples": [
+      { "en": "Let's **touch base** next week.", "ko": "다음 주에 간단히 얘기 나눠요." },
+      { "en": "I wanted to **touch base** about the budget.", "ko": "예산 건으로 잠깐 상황 공유하고 싶었어요." }
+    ],
+    "tags": ["직장", "이메일"]
+  },
+  {
+    "phrase": "get cold feet",
+    "ipa": "/ɡet koʊld fiːt/",
+    "ko": "겁이 나서 망설이다",
+    "note": "하기로 해놓고 막판에 무서워져 주저하는 것. 결혼식이나 발표 직전 얘기에 특히 자주 등장해요.",
+    "examples": [
+      { "en": "He **got cold feet** the night before the wedding.", "ko": "그는 결혼식 전날 겁이 덜컥 났어요." },
+      { "en": "I almost **got cold feet** before the presentation.", "ko": "발표 직전에 거의 겁먹고 물러설 뻔했어요." }
+    ],
+    "tags": ["감정", "일상"]
+  },
+  {
+    "phrase": "run late",
+    "ipa": "/rʌn leɪt/",
+    "ko": "늦어지다, 늦다",
+    "note": "'be late'보다 부드러워요. 아직 가는 중인데 예정보다 늦어진다는 뉘앙스라 연락할 때 딱이에요.",
+    "examples": [
+      { "en": "Sorry, I'm **running late** — about ten minutes.", "ko": "미안해요, 10분 정도 늦을 것 같아요." },
+      { "en": "The meeting is **running late**.", "ko": "회의가 예정보다 길어지고 있어요." }
+    ],
+    "tags": ["약속", "일상"]
+  },
+  {
+    "phrase": "no strings attached",
+    "ipa": "/noʊ strɪŋz əˈtætʃt/",
+    "ko": "아무 조건 없이",
+    "note": "대가나 숨은 의무가 전혀 없다는 뜻. 광고나 제안에서 “정말 공짜예요”를 강조할 때 자주 보여요.",
+    "examples": [
+      { "en": "It's a free trial, **no strings attached**.", "ko": "조건 없는 무료 체험이에요." },
+      { "en": "He offered to help, **no strings attached**.", "ko": "그는 아무 조건 없이 돕겠다고 했어요." }
+    ],
+    "tags": ["비즈니스", "일상"]
+  },
+  {
+    "phrase": "take it with a grain of salt",
+    "ipa": "/teɪk ɪt wɪð ə ɡreɪn əv sɔːlt/",
+    "ko": "걸러서 들어라",
+    "note": "그대로 다 믿지 말고 의심을 조금 섞어 받아들이라는 조언. 소문이나 인터넷 정보에 딱 맞는 말이에요.",
+    "examples": [
+      { "en": "**Take** online reviews **with a grain of salt**.", "ko": "온라인 후기는 좀 걸러서 보세요." },
+      { "en": "I'd **take that rumor with a grain of salt**.", "ko": "그 소문은 그대로 믿지 않는 게 좋겠어요." }
+    ],
+    "tags": ["조언", "정보"]
+  },
+  {
+    "phrase": "burn out",
+    "ipa": "/bɜːrn aʊt/",
+    "ko": "진이 빠지다, 번아웃되다",
+    "note": "무리하다가 에너지가 완전히 소진된 상태. 명사 'burnout'으로도 자주 쓰여요.",
+    "examples": [
+      { "en": "She **burned out** after months of overtime.", "ko": "몇 달간 야근하다가 완전히 지쳐버렸어요." },
+      { "en": "Take a break so you don't **burn out**.", "ko": "번아웃되지 않게 좀 쉬어요." }
+    ],
+    "tags": ["직장", "건강"]
+  },
+  {
+    "phrase": "the ball is in your court",
+    "ipa": "/ðə bɔːl ɪz ɪn jʊr kɔːrt/",
+    "ko": "이제 네가 결정할 차례야",
+    "note": "내가 할 일은 다 했으니 다음 행동은 상대에게 달렸다는 뜻. 테니스에서 온 표현이에요.",
+    "examples": [
+      { "en": "I've sent the offer — **the ball is in your court**.", "ko": "제안서는 보냈어요. 이제 결정은 그쪽에 달렸어요." },
+      { "en": "I apologized, so **the ball's in her court** now.", "ko": "사과는 했으니 이제 그녀 차례예요." }
+    ],
+    "tags": ["소통", "비즈니스"]
+  }
+]

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1350px;background:#F2EDE4;font-family:"Noto Sans CJK KR",sans-serif;
+       display:flex;flex-direction:column;padding:92px 84px 76px;position:relative;color:#1E1B16;
+       overflow:hidden}
+  .grain{position:absolute;inset:0;opacity:.5;
+    background-image:radial-gradient(circle at 20% 30%, rgba(0,0,0,.03) 0 1px, transparent 1px),
+                     radial-gradient(circle at 70% 60%, rgba(0,0,0,.025) 0 1px, transparent 1px);
+    background-size:7px 7px, 11px 11px;pointer-events:none}
+  .top{display:flex;justify-content:space-between;align-items:baseline}
+  .label{font-size:23px;letter-spacing:.42em;font-weight:600;color:#9A6A3C}
+  .date{font-size:22px;letter-spacing:.1em;color:#A9A093;font-family:"Caladea",serif}
+  .rule{height:1px;background:#1E1B16;opacity:.16;margin-top:26px}
+
+  .hero{flex:1;display:flex;flex-direction:column;justify-content:center;padding:24px 0 20px;min-height:0}
+  .phrase{font-family:"Noto Serif CJK KR",serif;font-size:112px;line-height:1.08;font-weight:700;
+          letter-spacing:-.025em;color:#161310}
+  .pron{margin-top:26px;font-size:30px;color:#8C8375;font-family:"Caladea",serif;font-style:italic}
+  .kor{margin-top:34px;font-size:44px;font-weight:700;color:#9A6A3C;letter-spacing:-.02em;line-height:1.3}
+  .desc{margin-top:20px;font-size:28px;line-height:1.62;color:#5C554B;max-width:850px}
+
+  .ex{border-top:1px solid rgba(30,27,22,.16);padding-top:38px}
+  .exlabel{font-size:20px;letter-spacing:.34em;color:#A9A093;font-weight:600;margin-bottom:26px}
+  .row{margin-bottom:28px}
+  .en{font-family:"Caladea",serif;font-size:var(--en,34px);line-height:1.4;color:#221E18}
+  .en b{color:#9A6A3C}
+  .ko{font-size:var(--ko,25px);color:#8C8375;margin-top:8px}
+  .foot{display:flex;justify-content:space-between;align-items:center;margin-top:14px;
+        font-size:22px;color:#A9A093;letter-spacing:.06em}
+  .dot{width:9px;height:9px;border-radius:50%;background:#9A6A3C;display:inline-block;margin-right:12px;vertical-align:2px}
+</style></head><body>
+<div class="grain"></div>
+<div class="top"><div class="label">TODAY'S ENGLISH</div><div class="date">No. {{NO}}</div></div>
+<div class="rule"></div>
+
+<div class="hero">
+  <div class="phrase" id="phrase">{{PHRASE}}</div>
+  <div class="pron">{{IPA}}</div>
+  <div class="kor">{{KO}}</div>
+  <div class="desc" id="desc">{{NOTE}}</div>
+</div>
+
+<div class="ex">
+  <div class="exlabel">IN CONTEXT</div>
+  {{ROWS}}
+  <div class="foot"><div><span class="dot"></span>매일 아침 7시, 영어 표현 한 개</div><div>{{HANDLE}}</div></div>
+</div>
+
+<script>
+// --- auto-fit --------------------------------------------------------------
+// 표현이 길거나 설명이 길어도 잘리지 않도록, 다 들어갈 때까지 글자 크기를 줄인다.
+// 측정 중에는 body 를 auto 높이로 풀어야 scrollHeight 가 실제 값을 돌려준다.
+(function () {
+  var H = 1350;
+  var body = document.body;
+  var phrase = document.getElementById('phrase');
+  var desc = document.getElementById('desc');
+
+  var prevH = body.style.height, prevO = body.style.overflow;
+  body.style.height = 'auto';
+  body.style.overflow = 'visible';
+
+  function tooTall() { return body.scrollHeight > H; }
+
+  // 1) 헤드라인: 최대 3줄, 그리고 전체가 넘치지 않을 때까지
+  var size = 112;
+  while (size > 52 && (phrase.scrollHeight > 3.3 * size || tooTall())) {
+    size -= 3;
+    phrase.style.fontSize = size + 'px';
+  }
+  // 2) 설명 문단
+  var d = 28;
+  while (d > 21 && tooTall()) {
+    d -= 1;
+    desc.style.fontSize = d + 'px';
+  }
+  // 3) 예문 블록 (영문/한글 비율 유지)
+  var e = 34;
+  while (e > 25 && tooTall()) {
+    e -= 1;
+    body.style.setProperty('--en', e + 'px');
+    body.style.setProperty('--ko', Math.round(e * 25 / 34) + 'px');
+  }
+
+  var fits = !tooTall();
+  body.style.height = prevH || H + 'px';
+  body.style.overflow = prevO || 'hidden';
+  document.documentElement.setAttribute('data-fitted', fits ? '1' : 'overflow');
+})();
+</script>
+</body></html>
