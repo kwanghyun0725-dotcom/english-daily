@@ -151,15 +151,101 @@ def _check(r, what):
     return data
 
 
+def _candidate_bases():
+    """설정된 주소를 먼저 쓰고, 실패하면 다른 방식도 자동으로 시도한다."""
+    bases = [API_BASE]
+    for alt in ("https://graph.instagram.com", "https://graph.facebook.com"):
+        if alt not in bases:
+            bases.append(alt)
+    return bases
+
+
+def _redact(text, token):
+    """오류 메시지에 토큰이 섞여 나오는 경우가 있어 반드시 지우고 기록한다."""
+    if not token:
+        return text
+    from urllib.parse import quote
+
+    out = text.replace(token, "***")
+    out = out.replace(quote(token, safe=""), "***")
+    return out
+
+
+def _diagnose(ig_user_id, token, image_url, errors):
+    """토큰 값은 절대 기록하지 않고, 원인 판별에 필요한 정보만 저장소에 남긴다."""
+    import subprocess
+
+    import requests
+
+    info = {
+        "확인시각_KST": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"),
+        "이미지주소": image_url,
+        "토큰_길이": len(token),
+        "토큰_공백포함": any(c.isspace() for c in token),
+        "토큰_앞부분형태": token[:4] + "..." if token else "(비어있음)",
+        "설정된_주소": API_BASE,
+        "계정ID_길이": len(ig_user_id),
+        "컨테이너_생성_오류": errors,
+        "주소별_계정조회결과": {},
+    }
+    for base in _candidate_bases():
+        try:
+            r = requests.get(
+                f"{base}/{API_VERSION}/me",
+                params={"fields": "user_id,username", "access_token": token},
+                timeout=30,
+            )
+            body = r.json()
+            info["주소별_계정조회결과"][base] = {"status": r.status_code, "body": body}
+            if str(body.get("user_id") or body.get("id") or "") == str(ig_user_id):
+                info["계정ID_일치하는_주소"] = base
+        except Exception as e:  # noqa: BLE001
+            info["주소별_계정조회결과"][base] = {"error": str(e)}
+
+    payload = _redact(json.dumps(info, ensure_ascii=False, indent=2), token)
+    (ROOT / "debug.json").write_text(payload, encoding="utf-8")
+    try:
+        subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=False)
+        subprocess.run(
+            ["git", "config", "user.email",
+             "41898282+github-actions[bot]@users.noreply.github.com"], check=False
+        )
+        subprocess.run(["git", "add", "debug.json"], check=False)
+        subprocess.run(["git", "commit", "-m", "chore: 진단 정보 기록"], check=False)
+        subprocess.run(["git", "pull", "--rebase", "--autostash"], check=False)
+        subprocess.run(["git", "push"], check=False)
+        print("  진단 정보를 debug.json 에 기록했습니다.")
+    except Exception as e:  # noqa: BLE001
+        print(f"  진단 정보 저장 실패: {e}")
+
+
 def post_image(ig_user_id, token, image_url, caption):
     import requests
 
-    r = requests.post(
-        _api(f"{ig_user_id}/media"),
-        data={"image_url": image_url, "caption": caption, "access_token": token},
-        timeout=60,
-    )
-    cid = _check(r, "컨테이너 생성")["id"]
+    errors = {}
+    cid = None
+    for base in _candidate_bases():
+        try:
+            r = requests.post(
+                f"{base}/{API_VERSION}/{ig_user_id}/media",
+                data={"image_url": image_url, "caption": caption, "access_token": token},
+                timeout=60,
+            )
+            cid = _check(r, "컨테이너 생성")["id"]
+            globals()["API_BASE"] = base
+            print(f"  사용한 주소: {base}")
+            break
+        except Exception as e:  # noqa: BLE001
+            errors[base] = str(e)
+            print(f"  {base} 실패 → 다른 주소로 재시도")
+
+    if cid is None:
+        _diagnose(ig_user_id, token, image_url, errors)
+        raise RuntimeError(
+            "모든 주소에서 컨테이너 생성 실패: "
+            + _redact(json.dumps(errors, ensure_ascii=False), token)
+        )
+
     print(f"  컨테이너 생성됨: {cid}")
 
     deadline = time.time() + 180
