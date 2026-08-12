@@ -160,6 +160,31 @@ def _candidate_bases():
     return bases
 
 
+def _discover_ig_accounts(token):
+    """페이스북 방식 토큰으로 접근 가능한 인스타 비즈니스 계정을 찾아낸다."""
+    import requests
+
+    found = []
+    try:
+        r = requests.get(
+            f"https://graph.facebook.com/{API_VERSION}/me/accounts",
+            params={
+                "fields": "name,instagram_business_account{id,username}",
+                "access_token": token,
+            },
+            timeout=30,
+        )
+        for page in r.json().get("data", []):
+            iba = page.get("instagram_business_account") or {}
+            if iba.get("id"):
+                found.append(
+                    {"page": page.get("name"), "id": iba["id"], "username": iba.get("username")}
+                )
+    except Exception as e:  # noqa: BLE001
+        print(f"  계정 조회 실패: {e}")
+    return found
+
+
 def _redact(text, token):
     """오류 메시지에 토큰이 섞여 나오는 경우가 있어 반드시 지우고 기록한다."""
     if not token:
@@ -186,8 +211,19 @@ def _diagnose(ig_user_id, token, image_url, errors):
         "설정된_주소": API_BASE,
         "계정ID_길이": len(ig_user_id),
         "컨테이너_생성_오류": errors,
+        "발견된_인스타계정": _discover_ig_accounts(token),
+        "토큰_권한": {},
         "주소별_계정조회결과": {},
     }
+    try:
+        pr = requests.get(
+            f"https://graph.facebook.com/{API_VERSION}/me/permissions",
+            params={"access_token": token},
+            timeout=30,
+        )
+        info["토큰_권한"] = pr.json()
+    except Exception as e:  # noqa: BLE001
+        info["토큰_권한"] = {"error": str(e)}
     for base in _candidate_bases():
         try:
             r = requests.get(
@@ -238,6 +274,26 @@ def post_image(ig_user_id, token, image_url, caption):
         except Exception as e:  # noqa: BLE001
             errors[base] = str(e)
             print(f"  {base} 실패 → 다른 주소로 재시도")
+
+    # 설정된 계정 ID로 안 되면, 토큰이 실제로 접근 가능한 계정을 찾아 다시 시도한다.
+    if cid is None:
+        for acc in _discover_ig_accounts(token):
+            if str(acc["id"]) == str(ig_user_id):
+                continue
+            try:
+                r = requests.post(
+                    f"https://graph.facebook.com/{API_VERSION}/{acc['id']}/media",
+                    data={"image_url": image_url, "caption": caption, "access_token": token},
+                    timeout=60,
+                )
+                cid = _check(r, "컨테이너 생성")["id"]
+                ig_user_id = acc["id"]
+                globals()["API_BASE"] = "https://graph.facebook.com"
+                print(f"  계정 ID 자동 발견: {acc['id']} (@{acc.get('username')})")
+                print(f"  ▶ IG_USER_ID 시크릿을 {acc['id']} 로 바꿔주세요.")
+                break
+            except Exception as e:  # noqa: BLE001
+                errors[f"발견된계정 {acc['id']}"] = str(e)
 
     if cid is None:
         _diagnose(ig_user_id, token, image_url, errors)
