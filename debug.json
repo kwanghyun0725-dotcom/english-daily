@@ -1,14 +1,51 @@
 {
-  "확인시각_KST": "2026-08-12 10:26:39",
-  "이미지주소": "https://raw.githubusercontent.com/kwanghyun0725-dotcom/english-daily/d72246be138fa3814e8cf8be92d82c1469c1ab69/posts/2026-08-12-000.jpg",
+  "확인시각_KST": "2026-08-12 10:33:59",
+  "이미지주소": "https://raw.githubusercontent.com/kwanghyun0725-dotcom/english-daily/a8f5399a89f02db26b1ed41cb0cc81d563abc1e4/posts/2026-08-12-000.jpg",
   "토큰_길이": 242,
   "토큰_공백포함": false,
   "토큰_앞부분형태": "EAAT...",
   "설정된_주소": "https://graph.facebook.com",
   "계정ID_길이": 17,
   "컨테이너_생성_오류": {
-    "https://graph.facebook.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Unsupported post request. Object with ID '17841441928922207' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"ALiHfQZgExGfuvHuQD3OMg4\"}}",
-    "https://graph.instagram.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"ARBaPNIJy-VEMRqnR_RgKkz\"}}"
+    "https://graph.facebook.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Unsupported post request. Object with ID '17841441928922207' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"AAO109gKPwToH-Qe46KMWPd\"}}",
+    "https://graph.instagram.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AgTcM4Jkxzadtjov03DQGMX\"}}"
+  },
+  "발견된_인스타계정": [],
+  "토큰_권한": {
+    "data": [
+      {
+        "permission": "catalog_management",
+        "status": "granted"
+      },
+      {
+        "permission": "instagram_basic",
+        "status": "granted"
+      },
+      {
+        "permission": "instagram_manage_comments",
+        "status": "granted"
+      },
+      {
+        "permission": "instagram_content_publish",
+        "status": "granted"
+      },
+      {
+        "permission": "instagram_branded_content_brand",
+        "status": "granted"
+      },
+      {
+        "permission": "instagram_branded_content_ads_brand",
+        "status": "granted"
+      },
+      {
+        "permission": "instagram_manage_contents",
+        "status": "granted"
+      },
+      {
+        "permission": "public_profile",
+        "status": "granted"
+      }
+    ]
   },
   "주소별_계정조회결과": {
     "https://graph.facebook.com": {
@@ -18,7 +55,7 @@
           "message": "(#100) Tried accessing nonexisting field (user_id)",
           "type": "OAuthException",
           "code": 100,
-          "fbtrace_id": "A_SNenU9-5llUM12y2Jgtln"
+          "fbtrace_id": "AMHKkONYyvfn9ztZ0xkMiQz"
         }
       }
     },
@@ -29,7 +66,7 @@
           "message": "Invalid OAuth access token - Cannot parse access token",
           "type": "OAuthException",
           "code": 190,
-          "fbtrace_id": "AiCEn1LHCa_dzqhp7zLLRr9"
+          "fbtrace_id": "Am0UazYkM_wpxdLn4f37m2q"
         }
       }
     }
