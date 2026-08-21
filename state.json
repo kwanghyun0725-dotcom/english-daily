@@ -1,5 +1,5 @@
 {
-  "next_index": 10,
+  "next_index": 11,
   "posted": [
     {
       "date": "2026-08-12",
@@ -60,6 +60,12 @@
       "index": 9,
       "phrase": "beat around the bush",
       "media_id": "18122788987843159"
+    },
+    {
+      "date": "2026-08-22",
+      "index": 10,
+      "phrase": "bite the bullet",
+      "media_id": "17880599205505710"
     }
   ]
 }
