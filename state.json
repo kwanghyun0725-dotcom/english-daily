@@ -1,5 +1,5 @@
 {
-  "next_index": 12,
+  "next_index": 13,
   "posted": [
     {
       "date": "2026-08-12",
@@ -72,6 +72,12 @@
       "index": 11,
       "phrase": "cost an arm and a leg",
       "media_id": "18091254740554593"
+    },
+    {
+      "date": "2026-08-24",
+      "index": 12,
+      "phrase": "take a rain check",
+      "media_id": "18101942753622138"
     }
   ]
 }
