@@ -1,5 +1,5 @@
 {
-  "next_index": 28,
+  "next_index": 29,
   "posted": [
     {
       "date": "2026-08-12",
@@ -168,6 +168,12 @@
       "index": 27,
       "phrase": "take it with a grain of salt",
       "media_id": "18119185709299186"
+    },
+    {
+      "date": "2026-09-10",
+      "index": 28,
+      "phrase": "burn out",
+      "media_id": "18016590833942024"
     }
   ]
 }
