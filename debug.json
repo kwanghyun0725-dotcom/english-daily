@@ -1,14 +1,14 @@
 {
-  "확인시각_KST": "2026-10-02 11:19:58",
-  "이미지주소": "https://raw.githubusercontent.com/kwanghyun0725-dotcom/english-daily/11b2af1b3bacaa23439dd65ae7c03850eda3a73e/posts/2026-10-02-020.jpg",
+  "확인시각_KST": "2026-10-12 09:57:07",
+  "이미지주소": "https://raw.githubusercontent.com/kwanghyun0725-dotcom/english-daily/e6bef853ca199131e7ba7df0081c856299a815ed/posts/2026-10-12-029.jpg",
   "토큰_길이": 184,
   "토큰_공백포함": false,
   "토큰_앞부분형태": "IGAA...",
   "설정된_주소": "https://graph.facebook.com",
   "계정ID_길이": 17,
   "컨테이너_생성_오류": {
-    "https://graph.facebook.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AfmK82ltUvmGL-l39ZbCqgV\"}}",
-    "https://graph.instagram.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AiDXNPmQ38fx6ovgR5BoeSJ\"}}"
+    "https://graph.facebook.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AnSeTDOrDex-9pErQZJgFGK\"}}",
+    "https://graph.instagram.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 10-Oct-26 18:54:26 PDT. The current time is Sunday, 11-Oct-26 17:57:07 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AyyVmuQlzDQ0RsNNg7Qildc\"}}"
   },
   "발견된_인스타계정": [],
   "토큰_권한": {
@@ -16,7 +16,7 @@
       "message": "Invalid OAuth access token - Cannot parse access token",
       "type": "OAuthException",
       "code": 190,
-      "fbtrace_id": "AfmN2UaUzLpiQc1N1iQBhPA"
+      "fbtrace_id": "Argl8XxnxpW3ON9oKBoGVTF"
     }
   },
   "주소별_계정조회결과": {
@@ -27,18 +27,21 @@
           "message": "Invalid OAuth access token - Cannot parse access token",
           "type": "OAuthException",
           "code": 190,
-          "fbtrace_id": "A9OD8ZWkH2_c89AAHoEnre2"
+          "fbtrace_id": "AaTVYnFo9BH-ItZiPfO_BVI"
         }
       }
     },
     "https://graph.instagram.com": {
-      "status": 200,
+      "status": 400,
       "body": {
-        "user_id": "17841441928922207",
-        "username": "at_english01",
-        "id": "28882542388000097"
+        "error": {
+          "message": "Error validating access token: Session has expired on Saturday, 10-Oct-26 18:54:26 PDT. The current time is Sunday, 11-Oct-26 17:57:07 PDT.",
+          "type": "OAuthException",
+          "code": 190,
+          "error_subcode": 0,
+          "fbtrace_id": "AVU5bAykcSfSpIWHw3NfbKg"
+        }
       }
     }
-  },
-  "계정ID_일치하는_주소": "https://graph.instagram.com"
+  }
 }
