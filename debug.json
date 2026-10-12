@@ -1,14 +1,14 @@
 {
-  "확인시각_KST": "2026-10-12 10:45:21",
-  "이미지주소": "https://raw.githubusercontent.com/kwanghyun0725-dotcom/english-daily/2dc7151aac2033271db6e5d61ab6cde2d0fefb3b/posts/2026-10-12-029.jpg",
+  "확인시각_KST": "2026-10-12 11:29:50",
+  "이미지주소": "https://raw.githubusercontent.com/kwanghyun0725-dotcom/english-daily/ee4f3c1618711d01fba4348023ca3d4a774bde24/posts/2026-10-12-029.jpg",
   "토큰_길이": 184,
   "토큰_공백포함": false,
   "토큰_앞부분형태": "IGAA...",
   "설정된_주소": "https://graph.facebook.com",
   "계정ID_길이": 17,
   "컨테이너_생성_오류": {
-    "https://graph.facebook.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AKfwiMCMW7-PVL2_VjD8c6T\"}}",
-    "https://graph.instagram.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 10-Oct-26 18:54:26 PDT. The current time is Sunday, 11-Oct-26 18:45:21 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AVss0A9LrC8Eo-edZjFGc4H\"}}"
+    "https://graph.facebook.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AKVmsN0guVzrZR01pn9qK6u\"}}",
+    "https://graph.instagram.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 10-Oct-26 18:54:26 PDT. The current time is Sunday, 11-Oct-26 19:29:50 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AFdOsZbMmB1ErICx7I50Mg7\"}}"
   },
   "발견된_인스타계정": [],
   "토큰_권한": {
@@ -16,7 +16,7 @@
       "message": "Invalid OAuth access token - Cannot parse access token",
       "type": "OAuthException",
       "code": 190,
-      "fbtrace_id": "AtrSXmel_Dy44As7Csqq5Qw"
+      "fbtrace_id": "A91DE37OqYkm_G5oNwpJztT"
     }
   },
   "주소별_계정조회결과": {
@@ -27,7 +27,7 @@
           "message": "Invalid OAuth access token - Cannot parse access token",
           "type": "OAuthException",
           "code": 190,
-          "fbtrace_id": "AiclG_PH5wgcB_KOpKcnGLp"
+          "fbtrace_id": "Ad08gucIqeYP6cM8TJkPKFn"
         }
       }
     },
@@ -35,11 +35,11 @@
       "status": 400,
       "body": {
         "error": {
-          "message": "Error validating access token: Session has expired on Saturday, 10-Oct-26 18:54:26 PDT. The current time is Sunday, 11-Oct-26 18:45:22 PDT.",
+          "message": "Error validating access token: Session has expired on Saturday, 10-Oct-26 18:54:26 PDT. The current time is Sunday, 11-Oct-26 19:29:50 PDT.",
           "type": "OAuthException",
           "code": 190,
           "error_subcode": 0,
-          "fbtrace_id": "AqFcJfopWA7KMyFRuUtoGwM"
+          "fbtrace_id": "A0mfhygTKDMtS8U6tPXPnbO"
         }
       }
     }
