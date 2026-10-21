@@ -1,14 +1,14 @@
 {
-  "확인시각_KST": "2026-10-21 09:22:35",
-  "이미지주소": "https://raw.githubusercontent.com/kwanghyun0725-dotcom/english-daily/2677d6c7ff354c771bb3b462b66689321f5014fa/posts/2026-10-21-029.jpg",
+  "확인시각_KST": "2026-10-21 09:54:08",
+  "이미지주소": "https://raw.githubusercontent.com/kwanghyun0725-dotcom/english-daily/b233226a84d1d37d3b11d33019c4ee6be712640a/posts/2026-10-21-029.jpg",
   "토큰_길이": 184,
   "토큰_공백포함": false,
   "토큰_앞부분형태": "IGAA...",
   "설정된_주소": "https://graph.facebook.com",
   "계정ID_길이": 17,
   "컨테이너_생성_오류": {
-    "https://graph.facebook.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AYJIPmeln0mLAWKZLjQiwnx\"}}",
-    "https://graph.instagram.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A2euRUyT_jtuKdFpts2TeGu\"}}"
+    "https://graph.facebook.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"Aio9PKQCvMekSzD-5AWDDYE\"}}",
+    "https://graph.instagram.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AtimMi2O6QBtTn4AqVKXzWx\"}}"
   },
   "발견된_인스타계정": [],
   "토큰_권한": {
@@ -16,7 +16,7 @@
       "message": "Invalid OAuth access token - Cannot parse access token",
       "type": "OAuthException",
       "code": 190,
-      "fbtrace_id": "Arw8uiiBEKhobEhd4_LP89g"
+      "fbtrace_id": "Aw-FFN4ppO6QYowW4Dh18zS"
     }
   },
   "주소별_계정조회결과": {
@@ -27,7 +27,7 @@
           "message": "Invalid OAuth access token - Cannot parse access token",
           "type": "OAuthException",
           "code": 190,
-          "fbtrace_id": "ABjar_HOMwkxB7yf2D5NjQv"
+          "fbtrace_id": "A0_C7LKf6UooNsJuWjLLx8C"
         }
       }
     },
@@ -39,7 +39,7 @@
           "type": "OAuthException",
           "code": 190,
           "error_subcode": 0,
-          "fbtrace_id": "AcMJE5hbCZbKhBOeginJmtR"
+          "fbtrace_id": "A7nHdMbk1SZfdIDjA8pP_r0"
         }
       }
     }
