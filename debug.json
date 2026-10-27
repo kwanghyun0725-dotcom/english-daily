@@ -1,14 +1,14 @@
 {
-  "확인시각_KST": "2026-10-27 10:05:56",
-  "이미지주소": "https://raw.githubusercontent.com/kwanghyun0725-dotcom/english-daily/01f288055bdc2dc2e4c6c840fcdc9b28e5c66beb/posts/2026-10-27-029.jpg",
+  "확인시각_KST": "2026-10-27 10:36:58",
+  "이미지주소": "https://raw.githubusercontent.com/kwanghyun0725-dotcom/english-daily/2fde1b2d5583d9f5054ff58d64d16021a847e529/posts/2026-10-27-029.jpg",
   "토큰_길이": 184,
   "토큰_공백포함": false,
   "토큰_앞부분형태": "IGAA...",
   "설정된_주소": "https://graph.facebook.com",
   "계정ID_길이": 17,
   "컨테이너_생성_오류": {
-    "https://graph.facebook.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AjRXk8TOkYK_dEOgDnpMb0n\"}}",
-    "https://graph.instagram.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.instagram.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A_S2vIUKKtMyGGyZQqTLlKu\"}}"
+    "https://graph.facebook.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"ABfFer4j5TWgwFLe0rr2_EW\"}}",
+    "https://graph.instagram.com": "컨테이너 생성 실패 [400]: {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.instagram.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AFqtbyHlr-EB7816mulabtm\"}}"
   },
   "발견된_인스타계정": [],
   "토큰_권한": {
@@ -16,7 +16,7 @@
       "message": "Invalid OAuth access token - Cannot parse access token",
       "type": "OAuthException",
       "code": 190,
-      "fbtrace_id": "AvmBKIv3MX6pLXto-0F7WxS"
+      "fbtrace_id": "AbtcAcwFu7VLLH86XUSHt1H"
     }
   },
   "주소별_계정조회결과": {
@@ -27,7 +27,7 @@
           "message": "Invalid OAuth access token - Cannot parse access token",
           "type": "OAuthException",
           "code": 190,
-          "fbtrace_id": "AzguSeL5ouG8Pcre7EUIRnb"
+          "fbtrace_id": "AdsUK2V3-flP3SL5gXAPSSr"
         }
       }
     },
@@ -39,7 +39,7 @@
           "type": "OAuthException",
           "code": 190,
           "error_subcode": 0,
-          "fbtrace_id": "AAa3cn-QoKitOPbQLa7ZKot"
+          "fbtrace_id": "AVGveexw9cx_BWAFC_0w1JX"
         }
       }
     }
